@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تبریک تولد 🎉</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    .puzzle {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .hint {
+      color: #d63384;
+      font-weight: bold;
+    }
+    .answer {
+      margin-top: 20px;
+      display: none;
+      font-size: 24px;
+      color: green;
+    }
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 تولدت مبارک دختر درخشان 🎂</h1>
+  <p class="puzzle">برای باز شدن تبریک، باید رمزشو وارد کنی!</p>
+  <p class="hint">راهنما: معنی قشنگ‌ترین اسم دنیا 🌟</p>
+  
+  <input type="text" id="codeInput" placeholder="کلمه رمز چیه؟">
+  <button onclick="checkCode()">تایید</button>
+
+  <div class="answer" id="secretMessage">
+    <p>🎈 تبریک می‌گم به زیباترین، بااحساس‌ترین و درخشان‌ترین دختری که می‌شناسم.</p>
+    <p>هرچند از هم دوریم، ولی دلم همیشه پیشته. تولدت مبارک 💖</p>
+  </div>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById('codeInput').value.trim();
+      if (input === "آریایی درخشان") {
+        document.getElementById('secretMessage').style.display = "block";
+      } else {
+        alert("نه! رمز اشتباهه :)");
+      }
+    }
+  </script>
+</body>
